@@ -13,8 +13,15 @@ button {
   background-color: #4a95f0;
   border: none;
   padding: 4px;
+  margin-left: 5px;
 }
 
 body{
   background-color: beige;
+}
+
+.send-text-wrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }

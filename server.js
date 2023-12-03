@@ -15,3 +15,14 @@ http.listen(port, () => {
 
 app.use('/scripts', express.static('scripts'));
 app.use('/styles', express.static('styles'));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './index.html'));
+});
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+  socket.on('message', (data) => {
+      io.emit('message', data);
+  });
+});
