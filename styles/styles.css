@@ -5,6 +5,7 @@
   height: 500px;
   margin-top: 20px;
   background-color: white;
+  overflow-y: scroll;
 }
 
 button {
